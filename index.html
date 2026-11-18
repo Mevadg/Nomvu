@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nomvu — Cartelera Cultural de Venezuela</title>
+    <meta
+      name="description"
+      content="Lo que pasa, pasa aquí. Explora eventos, música en vivo, bazares, gastronomía y talleres en Venezuela y reserva directo por WhatsApp."
+    />
+    <meta property="og:title" content="Nomvu — Lo que pasa, pasa aquí" />
+    <meta
+      property="og:description"
+      content="Lo que pasa, pasa aquí. Explora eventos, música en vivo, bazares, gastronomía y talleres en Venezuela."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/aistudio/logo-02_5aeb2a65.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-bar">
+        <a href="index.html" class="brand-link" aria-label="Nomvu Inicio">
+          <img
+            src="/assets/aistudio/logo-02_5aeb2a65.svg"
+            alt="Nomvu"
+            width="1218"
+            height="322"
+            class="brand-logo"
+          />
+        </a>
+
+        <nav class="nav-desktop" aria-label="Navegación principal">
+          <a href="index.html" class="nav-link is-active" aria-current="page">Cartelera</a>
+          <a href="productores.html" class="nav-link">Productores</a>
+          <a href="nosotros.html" class="nav-link">Nosotros</a>
+          <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" class="btn btn--outline nav-cta-desktop" data-open-register>
+            Regístrate
+          </button>
+          <a href="productores.html" class="btn btn--primary nav-cta-desktop">Publicar Evento</a>
+          <button
+            type="button"
+            class="menu-toggle"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            aria-label="Abrir menú"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <nav id="mobile-nav" class="nav-mobile" data-mobile-nav aria-label="Navegación móvil" hidden>
+        <div class="container">
+          <ul class="nav-mobile-list">
+            <li><a href="index.html" class="nav-mobile-link is-active" aria-current="page">Cartelera</a></li>
+            <li><a href="productores.html" class="nav-mobile-link">Productores</a></li>
+            <li><a href="nosotros.html" class="nav-mobile-link">Nosotros</a></li>
+            <li><a href="contacto.html" class="nav-mobile-link">Contacto</a></li>
+          </ul>
+          <div class="nav-mobile-actions">
+            <button type="button" class="btn btn--outline nav-mobile-cta" data-open-register>
+              Regístrate
+            </button>
+            <a href="productores.html" class="btn btn--primary nav-mobile-cta">Publicar Evento</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero--banner">
+        <div class="hero-banner">
+          <img
+            src="/assets/aistudio/Logo_Nomvu-04_a1366e8e.jpg"
+            alt="Nomvu — Venezuela tiene planes. Encuentra el tuyo. Lo que pasa, pasa aquí."
+          />
+        </div>
+
+        <div class="container">
+          <div class="grid-12 hero-subgrid">
+            <div class="col-full md-span-8 hero-copy">
+              <span class="kicker">Lo que pasa, pasa aquí</span>
+              <h1>Descubre planes reales en tu ciudad, sin perderte lo mejor de la semana.</h1>
+              <p class="lead">
+                Música en vivo, bazares de diseño, rutas gastronómicas y talleres creativos organizados por
+                estado. Filtra según tu presupuesto y reserva tu cupo directo por WhatsApp.
+              </p>
+            </div>
+
+            <div class="col-full md-span-4 hero-actions hero-actions--end">
+              <a href="#cartelera" class="btn btn--primary">Explorar cartelera</a>
+              <a href="productores.html" class="btn btn--outline">Organizas un evento</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cartelera" class="section">
+        <div class="container">
+          <div class="section-header section-header--split">
+            <div>
+              <span class="kicker">Próximas fechas</span>
+              <h2>Cartelera activa</h2>
+            </div>
+            <p>
+              Elige tu estado y el tipo de entrada para encontrar conciertos, talleres o bazares con
+              reserva inmediata.
+            </p>
+          </div>
+
+          <div class="filter-dock" role="region" aria-label="Búsqueda y filtros de eventos">
+            <div class="filter-dock-main">
+              <div class="filter-group filter-group--search">
+                <label for="filter-query" class="filter-label">Buscar en cartelera</label>
+                <div class="input-icon-wrap">
+                  <svg
+                    class="input-icon"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="M20 20l-3.5-3.5" />
+                  </svg>
+                  <input
+                    id="filter-query"
+                    type="search"
+                    class="search-control"
+                    placeholder="Nombre, ciudad o categoría..."
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+
+              <div class="filter-group filter-group--state">
+                <label for="filter-state" class="filter-label">Estado de Venezuela</label>
+                <div class="select-wrap">
+                  <svg
+                    class="select-icon-left"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 21s-6-5.33-6-10a6 6 0 1 1 12 0c0 4.67-6 10-6 10z" />
+                    <circle cx="12" cy="11" r="2.2" />
+                  </svg>
+                  <select id="filter-state" class="select-control">
+                    <option value="todos">Todos los estados</option>
+                    <option value="Distrito Capital">Distrito Capital</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Anzoátegui">Anzoátegui</option>
+                    <option value="Apure">Apure</option>
+                    <option value="Aragua">Aragua</option>
+                    <option value="Barinas">Barinas</option>
+                    <option value="Bolívar">Bolívar</option>
+                    <option value="Carabobo">Carabobo</option>
+                    <option value="Cojedes">Cojedes</option>
+                    <option value="Delta Amacuro">Delta Amacuro</option>
+                    <option value="Falcón">Falcón</option>
+                    <option value="Guárico">Guárico</option>
+                    <option value="La Guaira">La Guaira</option>
+                    <option value="Lara">Lara</option>
+                    <option value="Mérida">Mérida</option>
+                    <option value="Miranda">Miranda</option>
+                    <option value="Monagas">Monagas</option>
+                    <option value="Nueva Esparta">Nueva Esparta</option>
+                    <option value="Portuguesa">Portuguesa</option>
+                    <option value="Sucre">Sucre</option>
+                    <option value="Táchira">Táchira</option>
+                    <option value="Trujillo">Trujillo</option>
+                    <option value="Yaracuy">Yaracuy</option>
+                    <option value="Zulia">Zulia</option>
+                  </select>
+                  <svg
+                    class="select-chevron"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="filter-group filter-group--category">
+                <label for="filter-category" class="filter-label">Clasificación</label>
+                <div class="select-wrap">
+                  <svg
+                    class="select-icon-left"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path d="M4 6h16M4 12h10M4 18h6" />
+                  </svg>
+                  <select id="filter-category" class="select-control">
+                    <option value="todas">Todas las categorías</option>
+                    <option value="Música en vivo">Música en vivo</option>
+                    <option value="Talleres creativos">Talleres creativos</option>
+                    <option value="Bazares y diseño">Bazares y diseño</option>
+                    <option value="Gastronomía">Gastronomía</option>
+                    <option value="Cine y cultura">Cine y cultura</option>
+                    <option value="Fiestas y nocturno">Fiestas y nocturno</option>
+                    <option value="Carros">Carros</option>
+                    <option value="Caminatas">Caminatas</option>
+                    <option value="Deportes">Deportes</option>
+                    <option value="Teatro y comedia">Teatro y comedia</option>
+                    <option value="Educativo">Educativo</option>
+                  </select>
+                  <svg
+                    class="select-chevron"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="filter-group filter-group--type">
+                <span class="filter-label" id="filter-type-label">Tipo de entrada</span>
+                <div class="segmented-control" role="group" aria-labelledby="filter-type-label">
+                  <button
+                    type="button"
+                    class="segmented-btn is-active"
+                    data-type-filter="todos"
+                    aria-pressed="true"
+                  >
+                    Todos
+                  </button>
+                  <button
+                    type="button"
+                    class="segmented-btn segmented-btn--free"
+                    data-type-filter="gratis"
+                    aria-pressed="false"
+                  >
+                    Gratis
+                  </button>
+                  <button
+                    type="button"
+                    class="segmented-btn segmented-btn--paid"
+                    data-type-filter="pago"
+                    aria-pressed="false"
+                  >
+                    Pago
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-dock-footer">
+              <div class="filter-meta">
+                <span id="results-count" class="tabular">8 eventos disponibles</span>
+                <button type="button" id="reset-filters-btn" class="reset-link" hidden>
+                  Limpiar filtros
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div id="events-grid" class="grid-12" aria-live="polite">
+            <article class="event-card col-full md-span-6 lg-span-4">
+              <div class="event-card-media">
+                <img src="/assets/aistudio/Sesi_n_Ac_stica_en_la_Terraza_4a929ee5.png" alt="Sesión Acústica en la Terraza en Distrito Capital" />
+              </div>
+              <div class="event-card-body">
+                <div class="event-card-top">
+                  <span class="event-category">Música en vivo</span>
+                  <span class="price-tag price-tag--free">Gratis</span>
+                </div>
+                <h3 class="event-card-title">Sesión Acústica en la Terraza</h3>
+                <p class="event-card-description">
+                  Concierto íntimo de cantautores venezolanos en formato desenchufado al atardecer con terraza abierta y bebidas locales.
+                </p>
+                <dl class="event-meta-list">
+                  <div class="event-meta-item">
+                    <dt class="event-meta-label">Fecha y hora</dt>
+                    <dd class="event-meta-value">Sábado 21 Nov · 6:30 PM</dd>
+                  </div>
+                  <div class="event-meta-item">
+                    <dt class="event-meta-label">Estado</dt>
+                    <dd class="event-meta-value">Distrito Capital · Caracas, Chacao</dd>
+                  </div>
+                  <div class="event-meta-item">
+                    <dt class="event-meta-label">Cupos disponibles</dt>
+                    <dd class="event-meta-value">Quedan 18 cupos</dd>
+                  </div>
+                </dl>
+                <div class="event-card-footer">
+                  <a
+                    href="https://wa.me/584125550101?text=Hola%2C%20vi%20el%20evento%20%22Sesi%C3%B3n%20Ac%C3%BAstica%20en%20la%20Terraza%22%20en%20Nomvu%20y%20quiero%20reservar%20mi%20cupo."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn--primary btn--full"
+                  >
+                    Reservar por WhatsApp
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="register-callout">
+            <div style="display: flex; flex-direction: column; gap: 0.45rem;">
+              <span class="kicker">Alertas de tu ciudad</span>
+              <h3>Recibe los próximos eventos de tu estado en tu teléfono</h3>
+              <p>
+                Regístrate en segundos indicando tu estado y los tipos de eventos que prefieres para
+                recibir avisos automáticos con lo nuevo en tu ciudad.
+              </p>
+            </div>
+            <button type="button" class="btn btn--paid" data-open-register>
+              Regístrate
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="kicker">Por qué usar Nomvu</span>
+            <h2>Una cartelera pensada para salir más y buscar menos</h2>
+          </div>
+
+          <div class="grid-12">
+            <article class="editorial-card col-full md-span-4">
+              <span class="editorial-index">01.</span>
+              <h3>Planes filtrados por estado y presupuesto</h3>
+              <p>
+                Encuentra al instante qué ocurre en Caracas, Valencia, Maracaibo, Mérida o Barquisimeto,
+                separando entradas gratuitas de experiencias pagas con total claridad.
+              </p>
+            </article>
+
+            <article class="editorial-card col-full md-span-4">
+              <span class="editorial-index">02.</span>
+              <h3>Reserva directa sin intermediarios</h3>
+              <p>
+                Cada evento enlaza directo al WhatsApp del organizador para confirmar cupos, consultar
+                disponibilidad y coordinar tu entrada sin recargos de boletería.
+              </p>
+            </article>
+
+            <article class="editorial-card col-full md-span-4">
+              <span class="editorial-index">03.</span>
+              <h3>Más allá del algoritmo habitual</h3>
+              <p>
+                Centralizamos talleres creativos, sesiones íntimas, ferias de diseño y propuestas
+                gastronómicas que suelen perderse entre historias efímeras de redes sociales.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="kicker">Comunidad asistente</span>
+            <h2>Quienes exploran con Nomvu</h2>
+          </div>
+
+          <div class="grid-12">
+            <blockquote class="testimonial-card col-full md-span-6">
+              <p class="testimonial-quote">
+                "Antes pasaba el viernes revisando diez cuentas distintas para saber qué hacer en
+                Caracas. Ahora filtro por Distrito Capital y en cinco minutos reservo un taller de
+                cerámica o una noche acústica con mis amigas."
+              </p>
+              <footer class="testimonial-author">
+                <span class="testimonial-name">Valeria Mendoza</span>
+                <span class="testimonial-role">Diseñadora gráfica, 26 años · Distrito Capital</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card col-full md-span-6">
+              <p class="testimonial-quote">
+                "Con mi grupo de amigos usamos el filtro gratuito para ubicar bazares y cine al aire
+                libre en Carabobo. Escribir directo por WhatsApp hace todo rápido y sin pasos
+                innecesarios."
+              </p>
+              <footer class="testimonial-author">
+                <span class="testimonial-name">Andrés Villalobos</span>
+                <span class="testimonial-role">Arquitecto, 32 años · Carabobo</span>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="grid-12">
+          <div class="col-full md-span-5">
+            <a href="index.html" class="footer-logo-wrap" aria-label="Nomvu Inicio">
+              <img
+                src="/assets/aistudio/Logo_Nomvu-07_81d53311.png"
+                alt="Nomvu"
+                width="5077"
+                height="1342"
+                class="footer-logo"
+              />
+            </a>
+            <p style="margin-top: 1rem;">
+              Lo que pasa, pasa aquí. Cartelera digital de eventos, música, bazares, gastronomía y
+              talleres en Venezuela. Conectamos exploradores urbanos con productores locales.
+            </p>
+          </div>
+
+          <div class="col-full md-span-3">
+            <h2 class="footer-heading">Explorar</h2>
+            <ul class="footer-links">
+              <li><a href="index.html">Cartelera de eventos</a></li>
+              <li><a href="productores.html">Productores y patrocinio</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="contacto.html">Contacto y FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-full md-span-4">
+            <h2 class="footer-heading">Atención directa</h2>
+            <ul class="footer-links">
+              <li>
+                <a
+                  href="https://wa.me/584123558190?text=Hola%20Nomvu%2C%20tengo%20una%20consulta."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp Nomvu: 0412-3558190
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/nomvu.oficial/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram: @nomvu.oficial
+                </a>
+              </li>
+              <li>Cobertura nacional · Venezuela</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>Nomvu Venezuela. Todos los derechos reservados.</span>
+          <span>Diseñadora Mariangel Vásquez</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nomvu — Soporte y Preguntas Frecuentes</title>
+    <meta
+      name="description"
+      content="Resuelve dudas frecuentes para asistentes y productores en Nomvu. Escríbenos por formulario o recibe atención inmediata por WhatsApp."
+    />
+    <meta property="og:title" content="Nomvu — Soporte y Preguntas Frecuentes" />
+    <meta
+      property="og:description"
+      content="Preguntas frecuentes para asistentes y productores en Venezuela y soporte directo por WhatsApp."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/aistudio/logo-02_5aeb2a65.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-bar">
+        <a href="index.html" class="brand-link" aria-label="Nomvu Inicio">
+          <img
+            src="/assets/aistudio/logo-02_5aeb2a65.svg"
+            alt="Nomvu"
+            width="1218"
+            height="322"
+            class="brand-logo"
+          />
+        </a>
+
+        <nav class="nav-desktop" aria-label="Navegación principal">
+          <a href="index.html" class="nav-link">Cartelera</a>
+          <a href="productores.html" class="nav-link">Productores</a>
+          <a href="nosotros.html" class="nav-link">Nosotros</a>
+          <a href="contacto.html" class="nav-link is-active" aria-current="page">Contacto</a>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" class="btn btn--outline nav-cta-desktop" data-open-register>
+            Regístrate
+          </button>
+          <a href="productores.html" class="btn btn--primary nav-cta-desktop">Publicar Evento</a>
+          <button
+            type="button"
+            class="menu-toggle"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            aria-label="Abrir menú"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <nav id="mobile-nav" class="nav-mobile" data-mobile-nav aria-label="Navegación móvil" hidden>
+        <div class="container">
+          <ul class="nav-mobile-list">
+            <li><a href="index.html" class="nav-mobile-link">Cartelera</a></li>
+            <li><a href="productores.html" class="nav-mobile-link">Productores</a></li>
+            <li><a href="nosotros.html" class="nav-mobile-link">Nosotros</a></li>
+            <li><a href="contacto.html" class="nav-mobile-link is-active" aria-current="page">Contacto</a></li>
+          </ul>
+          <div class="nav-mobile-actions">
+            <button type="button" class="btn btn--outline nav-mobile-cta" data-open-register>
+              Regístrate
+            </button>
+            <a href="productores.html" class="btn btn--primary nav-mobile-cta">Publicar Evento</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container grid-12">
+          <div class="col-full md-span-9 hero-copy">
+            <span class="kicker">Soporte y centro de ayuda</span>
+            <h1>Resuelve tus dudas o conversa directo con nuestro equipo.</h1>
+            <p class="lead">
+              Aquí respondemos las preguntas más comunes de quienes asisten a eventos y de quienes
+              promocionan sus fechas en Nomvu.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="whatsapp-callout">
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+              <span class="kicker">Atención inmediata · Nomvu</span>
+              <h2>Soporte directo por WhatsApp</h2>
+              <p>
+                Escríbenos a <strong>Nomvu (0412-3558190)</strong> para activar tu pauta publicitaria,
+                actualizar datos de un evento o consultar alianzas de patrocinio. Horario: lunes a
+                domingo de 9:00 AM a 8:00 PM.
+              </p>
+            </div>
+            <a
+              href="https://wa.me/584123558190?text=Hola%20Nomvu%2C%20necesito%20ayuda%20con%20una%20consulta."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--primary"
+            >
+              Escribir a Nomvu por WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="kicker">Preguntas frecuentes</span>
+            <h2>Todo lo que necesitas saber</h2>
+          </div>
+
+          <div class="grid-12">
+            <div class="col-full md-span-6">
+              <h3 style="margin-bottom: 1.25rem;">Para Asistentes</h3>
+              <div class="faq-list">
+                <div class="faq-item">
+                  <button
+                    type="button"
+                    class="faq-trigger"
+                    aria-expanded="true"
+                    aria-controls="faq-a1"
+                  >
+                    <span>¿Nomvu vende las entradas directamente?</span>
+                    <span class="faq-icon" aria-hidden="true">−</span>
+                  </button>
+                  <div id="faq-a1" class="faq-panel">
+                    <p>
+                      No. Nomvu es una cartelera de descubrimiento y enlace directo. Cuando haces clic
+                      en "Reservar por WhatsApp", hablas directamente con el productor u organizador
+                      del evento para apartar tu cupo o pagar tu entrada sin recargos.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button
+                    type="button"
+                    class="faq-trigger"
+                    aria-expanded="false"
+                    aria-controls="faq-a2"
+                  >
+                    <span>¿Cómo confirmo mi asistencia a un evento gratuito?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-a2" class="faq-panel" hidden>
+                    <p>
+                      Aunque la entrada sea gratuita (etiqueta amarilla en la cartelera), muchos
+                      espacios trabajan por orden de llegada o aforo limitado. Te recomendamos usar el
+                      botón de WhatsApp de la ficha para confirmar si requieren registro previo.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button
+                    type="button"
+                    class="faq-trigger"
+                    aria-expanded="false"
+                    aria-controls="faq-a3"
+                  >
+                    <span>¿Los precios publicados incluyen cargos ocultos?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-a3" class="faq-panel" hidden>
+                    <p>
+                      No cobramos cargos por servicio al asistente. El monto referencial indicado en la
+                      tarjeta corresponde a la tarifa fijada por el organizador.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button
+                    type="button"
+                    class="faq-trigger"
+                    aria-expanded="false"
+                    aria-controls="faq-a4"
+                  >
+                    <span>¿En qué estados de Venezuela funciona Nomvu?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-a4" class="faq-panel" hidden>
+                    <p>
+                      Nomvu cubre los 23 estados de Venezuela y el Distrito Capital para que
+                      puedas publicar o descubrir eventos culturales, bazares y talleres en todo el
+                      país.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-full md-span-6">
+              <h3 style="margin-bottom: 1.25rem;">Para Productores</h3>
+              <div class="faq-list">
+                <div class="faq-item">
+                  <button
+                    type="button"
+                    class="faq-trigger"
+                    aria-expanded="true"
+                    aria-controls="faq-p1"
+                  >
+                    <span>¿Nomvu cobra comisión por cada entrada que vendo?</span>
+                    <span class="faq-icon" aria-hidden="true">−</span>
+                  </button>
+                  <div id="faq-p1" class="faq-panel">
+                    <p>
+                      No. Los eventos de entrada gratuita pueden publicarse sin costo en el Plan
+                      Entrada Libre ($0). Para eventos pagos o mayor visibilidad, solo pagas una
+                      tarifa fija ($5 por 1 evento, $15 por 5 eventos al mes o $30 al mes por hasta
+                      10 eventos) y conservas el 100% de tus ventas. Si necesitas diseño de flyer,
+                      también lo realizamos por $10 USD adicionales.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button
+                    type="button"
+                    class="faq-trigger"
+                    aria-expanded="false"
+                    aria-controls="faq-p2"
+                  >
+                    <span>¿Cuánto tarda en publicarse mi evento tras el registro?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-p2" class="faq-panel" hidden>
+                    <p>
+                      Una vez completas el formulario en la sección Productores y verificas el pago
+                      por WhatsApp, tu evento queda visible en la cartelera estatal en menos de 2
+                      horas.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button
+                    type="button"
+                    class="faq-trigger"
+                    aria-expanded="false"
+                    aria-controls="faq-p3"
+                  >
+                    <span>¿Puedo publicar eventos con entrada gratuita?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-p3" class="faq-panel" hidden>
+                    <p>
+                      Sí. Contamos con la opción gratuita Plan Entrada Libre ($0) para bazares,
+                      inauguraciones, exposiciones y actividades sin cobro de entrada, además de
+                      planes desde $5 si deseas mayor exposición en portada.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button
+                    type="button"
+                    class="faq-trigger"
+                    aria-expanded="false"
+                    aria-controls="faq-p4"
+                  >
+                    <span>¿Cómo funcionan los patrocinios para marcas?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-p4" class="faq-panel" hidden>
+                    <p>
+                      El Plan Mensual Pro ($30/mes) te permite publicar hasta 10 eventos en un mes y
+                      posiciona tu productora o marca junto a la cartelera del estado seleccionado.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container grid-12">
+          <div class="col-full md-span-5">
+            <span class="kicker">Consulta directa</span>
+            <h2 style="margin-top: 0.5rem;">Envíanos un mensaje</h2>
+            <p style="margin-top: 1rem;">
+              Si tienes una propuesta de alianza, necesitas reportar un cambio en un evento o tienes
+              una duda puntual, escríbenos mediante este formulario.
+            </p>
+          </div>
+
+          <div class="col-full md-span-7 form-panel">
+            <form id="contact-form" novalidate>
+              <div class="form-grid form-grid--two">
+                <div class="field">
+                  <label for="contact-name" class="field-label">Nombre completo</label>
+                  <input
+                    id="contact-name"
+                    type="text"
+                    class="field-input"
+                    placeholder="Tu nombre"
+                    required
+                  />
+                </div>
+
+                <div class="field">
+                  <label for="contact-email" class="field-label">Correo electrónico</label>
+                  <input
+                    id="contact-email"
+                    type="email"
+                    class="field-input"
+                    placeholder="nombre@correo.com"
+                    required
+                  />
+                </div>
+
+                <div class="field">
+                  <label for="contact-role" class="field-label">Tipo de consulta</label>
+                  <select id="contact-role" class="field-select">
+                    <option value="Asistente">Asistente / Visitante</option>
+                    <option value="Productor o Tallerista">Productor o Tallerista</option>
+                    <option value="Patrocinador / Marca">Patrocinador / Marca</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="contact-state" class="field-label">Estado</label>
+                  <select id="contact-state" class="field-select">
+                    <option value="Distrito Capital">Distrito Capital</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Anzoátegui">Anzoátegui</option>
+                    <option value="Apure">Apure</option>
+                    <option value="Aragua">Aragua</option>
+                    <option value="Barinas">Barinas</option>
+                    <option value="Bolívar">Bolívar</option>
+                    <option value="Carabobo">Carabobo</option>
+                    <option value="Cojedes">Cojedes</option>
+                    <option value="Delta Amacuro">Delta Amacuro</option>
+                    <option value="Falcón">Falcón</option>
+                    <option value="Guárico">Guárico</option>
+                    <option value="La Guaira">La Guaira</option>
+                    <option value="Lara">Lara</option>
+                    <option value="Mérida">Mérida</option>
+                    <option value="Miranda">Miranda</option>
+                    <option value="Monagas">Monagas</option>
+                    <option value="Nueva Esparta">Nueva Esparta</option>
+                    <option value="Portuguesa">Portuguesa</option>
+                    <option value="Sucre">Sucre</option>
+                    <option value="Táchira">Táchira</option>
+                    <option value="Trujillo">Trujillo</option>
+                    <option value="Yaracuy">Yaracuy</option>
+                    <option value="Zulia">Zulia</option>
+                  </select>
+                </div>
+
+                <div class="field field--full">
+                  <label for="contact-message" class="field-label">Mensaje</label>
+                  <textarea
+                    id="contact-message"
+                    class="field-textarea"
+                    placeholder="Cuéntanos en qué podemos ayudarte..."
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="field field--full">
+                  <p id="contact-error" class="field-error" role="alert" hidden></p>
+                  <button type="submit" class="btn btn--primary">Enviar consulta</button>
+                </div>
+              </div>
+            </form>
+
+            <div id="contact-feedback" class="form-feedback" aria-live="polite" hidden></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="grid-12">
+          <div class="col-full md-span-5">
+            <a href="index.html" class="footer-logo-wrap" aria-label="Nomvu Inicio">
+              <img
+                src="/assets/aistudio/Logo_Nomvu-07_81d53311.png"
+                alt="Nomvu"
+                width="5077"
+                height="1342"
+                class="footer-logo"
+              />
+            </a>
+            <p style="margin-top: 1rem;">
+              Lo que pasa, pasa aquí. Cartelera digital de eventos, música, bazares, gastronomía y
+              talleres en Venezuela. Conectamos exploradores urbanos con productores locales.
+            </p>
+          </div>
+
+          <div class="col-full md-span-3">
+            <h2 class="footer-heading">Explorar</h2>
+            <ul class="footer-links">
+              <li><a href="index.html">Cartelera de eventos</a></li>
+              <li><a href="productores.html">Productores y patrocinio</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="contacto.html">Contacto y FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-full md-span-4">
+            <h2 class="footer-heading">Atención directa</h2>
+            <ul class="footer-links">
+              <li>
+                <a
+                  href="https://wa.me/584123558190?text=Hola%20Nomvu%2C%20tengo%20una%20consulta."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp Nomvu: 0412-3558190
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/nomvu.oficial/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram: @nomvu.oficial
+                </a>
+              </li>
+              <li>Cobertura nacional · Venezuela</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>Nomvu Venezuela. Todos los derechos reservados.</span>
+          <span>Diseñadora Mariangel Vásquez</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
