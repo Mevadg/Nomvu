@@ -2,7 +2,10 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import fs from 'fs';
 import path from 'path';
+import {fileURLToPath} from 'url';
 import {defineConfig} from 'vite';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig(() => {
   return {
@@ -19,9 +22,9 @@ export default defineConfig(() => {
           if (error) {
             return;
           }
-          const distDir = path.resolve(import.meta.dirname, 'dist');
-          const srcAssets = path.resolve(import.meta.dirnamee, 'src/assets');
-          const distAssets = path.resolve(import.meta.dirname, 'src/assets');
+          const distDir = path.resolve(__dirname, 'dist');
+          const srcAssets = path.resolve(__dirname, 'src/assets');
+          const distAssets = path.resolve(distDir, 'src/assets');
           if (fs.existsSync(distDir) && fs.existsSync(srcAssets)) {
             fs.cpSync(srcAssets, distAssets, {recursive: true, force: true});
           }
@@ -30,16 +33,16 @@ export default defineConfig(() => {
     ],
     resolve: {
       alias: {
-        '@': path.resolve(import.meta.dirname, '.'),
+        '@': path.resolve(__dirname, '.'),
       },
     },
     build: {
       rollupOptions: {
         input: {
-          main: path.resolve(import.meta.dirname, 'index.html'),
-          productores: path.resolve(import.meta.dirname, 'productores.html'),
-          nosotros: path.resolve(import.meta.dirname, 'nosotros.html'),
-          contacto: path.resolve(import.meta.dirname, 'contacto.html'),
+          main: path.resolve(__dirname, 'index.html'),
+          productores: path.resolve(__dirname, 'productores.html'),
+          nosotros: path.resolve(__dirname, 'nosotros.html'),
+          contacto: path.resolve(__dirname, 'contacto.html'),
         },
       },
     },
