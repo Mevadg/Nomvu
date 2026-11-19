@@ -500,10 +500,10 @@
 
           const formData = new FormData(form);
           const payload = {
-            nombre: (formData.get('nombre') || '').toString().trim(),
-            telefono: (formData.get('telefono') || '').toString().trim(),
-            edad: (formData.get('edad') || '').toString().trim(),
-            estado: (formData.get('estado') || '').toString().trim(),
+            Nombre: (formData.get('nombre') || '').toString().trim(),
+            Teléfono: (formData.get('telefono') || '').toString().trim(),
+            Edad: (formData.get('edad') || '').toString().trim(),
+            Estado: (formData.get('estado') || '').toString().trim(),
           };
 
           const { error } = await supabase.from('personas').insert([payload]);
