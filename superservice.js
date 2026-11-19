@@ -1,1 +1,1 @@
-import { createClient } from '@supabase/supabase-js'; const supabaseUrl = 'TU_URL_AQUÍ'; const supabaseKey = 'TU_CLAVE_API_AQUÍ'; export const supabase = createClient(supabaseUrl, supabaseKey);
+import { createClient } from '@supabase/supabase-js'; const supabaseUrl = 'lowjentpgagrrehmepap'; const supabaseKey = 'mariangel*2801'; export const supabase = createClient(supabaseUrl, supabaseKey);
